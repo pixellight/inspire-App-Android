@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="myapp.net.inspire.MainActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/mainLayoutGraphReport"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/portraitMenu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tabHeight"
+                android:background="@drawable/rectangle"
+                android:weightSum="2">
+
+                <myapp.net.inspire.font.AvenirRoman
+                    android:id="@+id/planGraph"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/planBackground"
+                    android:gravity="center"
+                    android:text="Plan"
+                    android:textColor="@color/white" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black" />
+
+                <myapp.net.inspire.font.AvenirRoman
+                    android:id="@+id/progressGraph"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:text="Progress"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:id="@+id/fragmennt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomUp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="3"
+
+            >
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#33762d"
+                android:gravity="center"
+                android:text="Within +/- 15 min"
+                android:textColor="@color/white"
+                android:textSize="@dimen/smallText" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#e6cc3c"
+                android:gravity="center"
+                android:text="Beyond +/- 15 min"
+                android:textColor="@color/black"
+                android:textSize="@dimen/smallText" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#df421b"
+                android:gravity="center"
+                android:text="No Data"
+                android:textColor="@color/white"
+                android:textSize="@dimen/smallText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomUpLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/blackDim"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/fullPrescribingInformationTrack"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Full Prescribing Information"
+                android:textColor="@color/black"
+                android:textSize="@dimen/smallText" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/importantSafetyInformationTrack"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Important Safety Information"
+                android:textColor="@color/black"
+                android:textSize="@dimen/smallText" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/noReportLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#02348f"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/track_report_first" />
+
+        <ImageButton
+            android:id="@+id/doneBttnReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="@dimen/margin_16dp"
+            android:background="@drawable/ic_action_done"
+            android:clickable="true"
+            android:padding="@dimen/margin_16dp" />
+
+    </FrameLayout>
+
+</LinearLayout>

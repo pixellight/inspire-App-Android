@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar_email"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/marginTwenty"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To:"
+            android:textColor="@color/blackDim"
+            android:textSize="@dimen/mediumText" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/marginTwenty"
+        android:background="@color/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/marginTwenty"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cc:"
+            android:textColor="@color/blackDim"
+            android:textSize="@dimen/mediumText" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/marginTwenty"
+        android:background="@color/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/marginTwenty"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bcc"
+            android:textColor="@color/blackDim"
+            android:textSize="@dimen/mediumText" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/marginTwenty"
+        android:background="@color/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/marginTwenty"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From:"
+            android:textColor="@color/blackDim"
+            android:textSize="@dimen/mediumText" />
+
+        <EditText
+            android:id="@+id/fromEmailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/mediumText"
+            android:backgroundTint="@android:color/transparent" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/marginTwenty"
+        android:background="@color/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/marginTwenty"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject:"
+            android:textColor="@color/blackDim"
+            android:textSize="@dimen/mediumText" />
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inspire+ Report"
+            android:textSize="@dimen/mediumText"
+            android:backgroundTint="@android:color/transparent" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/marginTwenty"
+        android:background="@color/background" />
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_gravity="center"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pdf"/>
+
+    <EditText
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blackDim"
+        android:text="Inspire+ Re...-9-2018.pdf"
+        android:textSize="@dimen/mediumText"
+        android:backgroundTint="@android:color/transparent" /></LinearLayout>
+</LinearLayout>

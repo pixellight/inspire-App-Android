@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <myapp.net.inspire.font.AmarelinhaBold
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_toRightOf="@id/titleLeft"
+            android:layout_weight="1"
+            android:text="Test"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_toolbar" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/titleLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:layout_marginRight="@dimen/margin_8dp"
+            android:text="X"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_24sp" />
+
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/titleRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/marginTwenty"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/largeText" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_action_confirm_bg"
+                />
+
+            <LinearLayout
+                android:id="@+id/confirmLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_marginTop="14dp"
+                android:visibility="visible">
+
+                <myapp.net.inspire.font.AvenirRoman
+                    android:id="@+id/confirmText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Confirm"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_24sp"
+                    android:textStyle="bold" />
+
+                <myapp.net.inspire.font.AvenirRoman
+                    android:id="@+id/titleDes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Nap 1 taken"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_18sp" />
+
+                <myapp.net.inspire.font.AvenirRoman
+                    android:id="@+id/titleReceiver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:gravity="center"
+                    android:text="Nap 1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/confirmLayoutWake"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <myapp.net.inspire.font.AvenirMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Good Morning!"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <myapp.net.inspire.font.AvenirMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:gravity="center"
+                    android:text="Please Confirm"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_18sp" />
+
+                <myapp.net.inspire.font.AvenirMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Wake-up"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/descriptionBelow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:gravity="center"
+            android:text="@string/dose_notification_des"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_14sp"
+            android:textStyle="normal"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/bottomView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_info_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blackDim"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/fullPrescribeInformation"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Full Prescribing Information"
+                android:textColor="@color/black"
+                android:textSize="@dimen/smallText" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/importantSafetyInformation"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Important Safety Information"
+                android:textColor="@color/black"
+                android:textSize="@dimen/smallText" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

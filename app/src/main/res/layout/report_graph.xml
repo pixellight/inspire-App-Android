@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tabHeight"
+        android:background="@drawable/rectangle"
+        android:visibility="gone"
+        android:weightSum="4">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/planWeek"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="Plan (Week)"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/planMonth"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Plan (Month)"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/progressWeek"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Progress (Week)"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/progressMonth"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@color/planBackground"
+            android:gravity="center"
+            android:text="Progress (Month)"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomView"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_4dp"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/marginFive"
+                    android:orientation="vertical">
+
+                    <myapp.net.inspire.font.AvenirRoman
+                        android:id="@+id/currentWeekTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/largeText"
+                        android:visibility="visible" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:visibility="visible">
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/chart1"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp" />
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/chart"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/yearLinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+                    <myapp.net.inspire.font.AvenirRoman
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="3rd Aug-13th Sep"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/largeText"
+                        android:visibility="gone" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:visibility="gone">
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/chartSecond"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp" />
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/chartSecond1"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp" />
+
+                    </FrameLayout>
+
+                    <myapp.net.inspire.font.AvenirRoman
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="3rd Aug-13th Sep"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/largeText"
+                        android:visibility="gone" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:visibility="gone">
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/chartThird"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp" />
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/chartThird1"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp" />
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@color/planBackground"
+                android:orientation="vertical">
+
+                <myapp.net.inspire.font.AvenirRoman
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_8dp"
+                    android:text="EDS Severity"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_14sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/white" />
+
+                <myapp.net.inspire.font.AvenirMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginRight="@dimen/margin_16dp"
+                    android:text="3 = Severe"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <myapp.net.inspire.font.AvenirMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginRight="@dimen/margin_16dp"
+                    android:text="2 = Moderate"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <myapp.net.inspire.font.AvenirMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginRight="@dimen/margin_16dp"
+                    android:text="1 = Mild"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <myapp.net.inspire.font.AvenirMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginRight="@dimen/margin_16dp"
+                    android:text="0 = Normal"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <myapp.net.inspire.font.AvenirRoman
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_8dp"
+                    android:text="Cataplexy Frequency"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_14sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/white" />
+
+                <myapp.net.inspire.font.AvenirMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginRight="@dimen/margin_16dp"
+                    android:text="3 = More"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <myapp.net.inspire.font.AvenirMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginRight="@dimen/margin_16dp"
+                    android:text="2 = The Same"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <myapp.net.inspire.font.AvenirMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginRight="@dimen/margin_16dp"
+                    android:text="1 = Somewhat fewer"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <myapp.net.inspire.font.AvenirMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginRight="@dimen/margin_16dp"
+                    android:text="0 = Significantly fewer"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--<ImageView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_weight="0.5"-->
+            <!--android:background="@drawable/eds_severity_key" />-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_weight="0.5"-->
+            <!--android:background="@drawable/cataplexy_key" />-->
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

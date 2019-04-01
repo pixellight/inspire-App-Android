@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginTen"
+        android:background="@drawable/rectangle_color"
+        android:hint="Title"
+        android:maxLines="1"
+        android:padding="@dimen/marginTen"
+        android:textColor="@color/black"
+        android:textSize="@dimen/largeText" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/bodyEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomUpLayout"
+            android:layout_marginBottom="@dimen/marginTen"
+            android:layout_marginEnd="@dimen/marginTen"
+            android:layout_marginStart="@dimen/marginTen"
+            android:background="@drawable/rectangle_color"
+            android:fontFamily="sans-serif-light"
+            android:gravity="start"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:lineSpacingExtra="2dp"
+            android:padding="@dimen/margin_8dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mediumText" />
+
+        <LinearLayout
+            android:id="@+id/bottomUpLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blackDim"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/fullPrescribingInformationNote"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Full Prescribing Information"
+                android:textColor="@color/black"
+                android:textSize="@dimen/smallText" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/importantSafetyInformationNote"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Important Safety Information"
+                android:textColor="@color/black"
+                android:textSize="@dimen/smallText" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

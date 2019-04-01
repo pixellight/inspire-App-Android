@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/marginTen">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="@string/sitting"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/smallText" />
+
+        <ImageView
+            android:id="@+id/quesOne_zero"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:src="@drawable/zero_off" />
+
+        <ImageView
+            android:id="@+id/quesOne_one"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:layout_marginStart="@dimen/marginTwo"
+            android:src="@drawable/one_off" />
+
+        <ImageView
+            android:id="@+id/quesOne_two"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:layout_marginStart="@dimen/marginTwo"
+            android:src="@drawable/two_off" />
+
+        <ImageView
+            android:id="@+id/quesOne_three"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:layout_marginStart="@dimen/marginTwo"
+            android:src="@drawable/three_off" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/planBackground" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/marginTen">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/marginTwenty"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="Watching television"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/smallText" />
+
+        <ImageView
+            android:id="@+id/quesTwo_zero"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:src="@drawable/zero_off" />
+
+        <ImageView
+            android:id="@+id/quesTwo_one"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:layout_marginStart="@dimen/marginTwo"
+            android:src="@drawable/one_off" />
+
+        <ImageView
+            android:id="@+id/quesTwo_two"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:layout_marginStart="@dimen/marginTwo"
+            android:src="@drawable/two_off" />
+
+        <ImageView
+            android:id="@+id/quesTwo_three"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:layout_marginStart="@dimen/marginTwo"
+            android:src="@drawable/three_off" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/planBackground" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/marginTen">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/marginTwenty"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="@string/sitting_inactive"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/smallText" />
+
+        <ImageView
+            android:id="@+id/quesThree_zero"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:src="@drawable/zero_off" />
+
+        <ImageView
+            android:id="@+id/quesThree_one"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:layout_marginStart="@dimen/marginTwo"
+            android:src="@drawable/one_off" />
+
+        <ImageView
+            android:id="@+id/quesThree_two"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:layout_marginStart="@dimen/marginTwo"
+            android:src="@drawable/two_off" />
+
+        <ImageView
+            android:id="@+id/quesThree_three"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:layout_marginStart="@dimen/marginTwo"
+            android:src="@drawable/three_off" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/planBackground" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/marginTen">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/marginTwenty"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="@string/passenger_car"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/smallText" />
+
+        <ImageView
+            android:id="@+id/quesFour_zero"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:src="@drawable/zero_off" />
+
+        <ImageView
+            android:id="@+id/quesFour_one"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:layout_marginStart="@dimen/marginTwo"
+            android:src="@drawable/one_off" />
+
+        <ImageView
+            android:id="@+id/quesFour_two"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:layout_marginStart="@dimen/marginTwo"
+            android:src="@drawable/two_off" />
+
+        <ImageView
+            android:id="@+id/quesFour_three"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:layout_marginStart="@dimen/marginTwo"
+            android:src="@drawable/three_off" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/planBackground" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/marginTen">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/marginTwenty"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="@string/lying_down"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/smallText" />
+
+        <ImageView
+            android:id="@+id/quesFive_zero"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:src="@drawable/zero_off" />
+
+        <ImageView
+            android:id="@+id/quesFive_one"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:layout_marginStart="@dimen/marginTwo"
+            android:src="@drawable/one_off" />
+
+        <ImageView
+            android:id="@+id/quesFive_two"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:layout_marginStart="@dimen/marginTwo"
+            android:src="@drawable/two_off" />
+
+        <ImageView
+            android:id="@+id/quesFive_three"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:layout_marginStart="@dimen/marginTwo"
+            android:src="@drawable/three_off" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/planBackground" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/marginTen">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/marginTwenty"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="@string/sitting_talking"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/smallText" />
+
+        <ImageView
+            android:id="@+id/quesSix_zero"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:src="@drawable/zero_off" />
+
+        <ImageView
+            android:id="@+id/quesSix_one"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:layout_marginStart="@dimen/marginTwo"
+            android:src="@drawable/one_off" />
+
+        <ImageView
+            android:id="@+id/quesSix_two"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:layout_marginStart="@dimen/marginTwo"
+            android:src="@drawable/two_off" />
+
+        <ImageView
+            android:id="@+id/quesSix_three"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:layout_marginStart="@dimen/marginTwo"
+            android:src="@drawable/three_off" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/planBackground" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/marginTen">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/marginTwenty"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="@string/sitting_quitely"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/smallText" />
+
+        <ImageView
+            android:id="@+id/quesSeven_zero"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:src="@drawable/zero_off" />
+
+        <ImageView
+            android:id="@+id/quesSeven_one"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:layout_marginStart="@dimen/marginTwo"
+            android:src="@drawable/one_off" />
+
+        <ImageView
+            android:id="@+id/quesSeven_two"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:layout_marginStart="@dimen/marginTwo"
+            android:src="@drawable/two_off" />
+
+        <ImageView
+            android:id="@+id/quesSeven_three"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:layout_marginStart="@dimen/marginTwo"
+            android:src="@drawable/three_off" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/planBackground"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/marginTen"
+        android:visibility="visible">
+
+        <myapp.net.inspire.font.AvenirRoman
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/marginTwenty"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="@string/sitting_incar"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/smallText" />
+
+        <ImageView
+            android:id="@+id/quesEight_zero"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:src="@drawable/zero_off" />
+
+        <ImageView
+            android:id="@+id/quesEight_one"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:layout_marginStart="@dimen/marginTwo"
+            android:src="@drawable/one_off" />
+
+        <ImageView
+            android:id="@+id/quesEight_two"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:layout_marginStart="@dimen/marginTwo"
+            android:src="@drawable/two_off" />
+
+        <ImageView
+            android:id="@+id/quesEight_three"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/marginTwo"
+            android:layout_marginStart="@dimen/marginTwo"
+            android:src="@drawable/three_off" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/planBackground" />
+
+</LinearLayout>

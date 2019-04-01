@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <myapp.net.inspire.font.AvenirRoman
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_8dp"
+                    android:text="@string/select_your_alarm_sounds"
+                    android:textColor="@color/planBackground"
+                    android:textSize="@dimen/font_24sp" />
+
+                <myapp.net.inspire.font.AvenirMedium
+                    android:id="@+id/nap1TimeTextview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_8dp"
+                    android:text="@string/alarm_description"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/margin_8dp"
+                    android:paddingTop="@dimen/margin_8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/doseOneLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_4dp">
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/doseOneTextview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/dose1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_18sp" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/doseOneAlarmTextview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/alarm_clock"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_18sp" />
+                    </RelativeLayout>
+
+                    <NumberPicker
+                        android:id="@+id/doseOnePicker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:descendantFocusability="blocksDescendants"
+                        android:theme="@style/LanguagePickerTheme"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/planBackground" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/margin_8dp"
+                    android:paddingTop="@dimen/margin_8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/doseTwoLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_4dp">
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/doseTwoTextview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/dose2"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_18sp" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/doseTwoAlarmTextview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/alarm_clock"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_18sp" />
+                    </RelativeLayout>
+
+                    <NumberPicker
+                        android:id="@+id/doseTwoPicker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:descendantFocusability="blocksDescendants"
+                        android:theme="@style/LanguagePickerTheme"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/planBackground" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/margin_8dp"
+                    android:paddingTop="@dimen/margin_8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/wakeLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_4dp">
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/wakeTextview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/wake"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_18sp" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/wakeAlarmTextview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/alarm_clock"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_18sp" />
+                    </RelativeLayout>
+
+                    <NumberPicker
+                        android:id="@+id/wakePicker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:descendantFocusability="blocksDescendants"
+                        android:theme="@style/LanguagePickerTheme"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/planBackground" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/margin_8dp"
+                    android:paddingTop="@dimen/margin_8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/napeStartLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_4dp">
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/napeStartTextview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/nap_start"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_18sp" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/napeStartAlarmTextview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/alarm_clock"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_18sp" />
+                    </RelativeLayout>
+
+                    <NumberPicker
+                        android:id="@+id/napStartPicker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:descendantFocusability="blocksDescendants"
+                        android:theme="@style/LanguagePickerTheme"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/planBackground" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/margin_8dp"
+                    android:paddingTop="@dimen/margin_8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/napEndLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_4dp">
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/napEndTextview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/nap_end"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_18sp" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/napEndAlarmTextview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/alarm_clock"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_18sp" />
+                    </RelativeLayout>
+
+                    <NumberPicker
+                        android:id="@+id/napEndPicker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:descendantFocusability="blocksDescendants"
+                        android:theme="@style/LanguagePickerTheme"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/planBackground" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

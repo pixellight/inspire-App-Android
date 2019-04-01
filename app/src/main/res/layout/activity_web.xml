@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WebActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" />
+
+    <include
+        layout="@layout/content_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomView"
+        android:layout_below="@id/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/bottomViewWeb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_info_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blackDim"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/fullPrescribeInformationWeb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Full Prescribing Information"
+            android:textColor="@color/black"
+            android:textSize="@dimen/smallText" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/importantSafetyInformationWeb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Important Safety Information"
+            android:textColor="@color/black"
+            android:textSize="@dimen/smallText" />
+
+    </LinearLayout>
+
+</RelativeLayout>

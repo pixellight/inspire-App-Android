@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/select_your_reminder"
+                android:textColor="@color/planBackground"
+                android:textSize="@dimen/font_24sp" />
+
+            <myapp.net.inspire.font.AvenirMedium
+                android:id="@+id/nap1TimeTextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reminder_description"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:textSize="@dimen/font_18sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <myapp.net.inspire.font.AvenirRoman
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/eat_by_reminder"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/mediumText" />
+
+                    <myapp.net.inspire.font.AvenirRoman
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 hour before eat by time"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/smallText" />
+                </LinearLayout>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switchEatBy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:theme="@style/SwitchCompatTheme" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/planBackground" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <myapp.net.inspire.font.AvenirRoman
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dose_one_reminder"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/mediumText" />
+
+                    <myapp.net.inspire.font.AvenirRoman
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15 minutes before bedtime"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/smallText" />
+                </LinearLayout>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switchDoseOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:theme="@style/SwitchCompatTheme" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/planBackground" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <myapp.net.inspire.font.AvenirRoman
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nap_reminder"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/mediumText" />
+
+                    <myapp.net.inspire.font.AvenirRoman
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10 minutes before nap time"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/smallText" />
+                </LinearLayout>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switchNap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:theme="@style/SwitchCompatTheme" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/planBackground" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

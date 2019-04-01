@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="myapp.net.inspire.MainActivity">
+
+    <include layout="@layout/custom_toolbar_main" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fragmennt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/bottomView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_info_height"
+            android:background="@color/blackDim"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/fullPrescribeInformation"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Full Prescribing Information"
+                android:textColor="@color/black"
+                android:textSize="@dimen/smallText" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/importantSafetyInformation"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Important Safety Information"
+                android:textColor="@color/black"
+                android:textSize="@dimen/smallText" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/inspireDefulatLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/margin_8dp"
+            android:src="@drawable/inspire_plus_logo" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:id="@+id/loadLearn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/loadImage"
+                android:layout_width="@dimen/imageDimen"
+                android:layout_height="@dimen/imageDimen"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_learn"
+                android:tint="@color/imageTint" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/loadText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-7dp"
+                android:text="@string/learn"
+                android:textColor="@color/imageTint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/loadPlane"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imagePlane"
+                android:layout_width="@dimen/imageDimen"
+                android:layout_height="@dimen/imageDimen"
+                android:src="@drawable/ic_plane"
+                android:tint="@color/imageTint" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/textPlane"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-7dp"
+                android:text="@string/plane"
+                android:textColor="@color/imageTint" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/loadTrack"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageTrack"
+                android:layout_width="@dimen/imageDimen"
+                android:layout_height="@dimen/imageDimen"
+                android:src="@drawable/ic_track"
+                android:tint="@color/imageTint" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/textTrack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-7dp"
+                android:text="@string/track"
+                android:textColor="@color/imageTint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/loadMore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageMore"
+                android:layout_width="@dimen/imageDimen"
+                android:layout_height="@dimen/imageDimen"
+                android:src="@drawable/ic_more"
+                android:tint="@color/imageTint" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/moreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-7dp"
+                android:text="@string/more"
+                android:textColor="@color/imageTint" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

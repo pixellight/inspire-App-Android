@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/background_dialog"
+    android:gravity="center"
+    android:minWidth="100dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTwenty"
+        android:fontFamily="sans-serif"
+        android:text="@string/inspire_tips"
+        android:textColor="@color/black"
+        android:textSize="@dimen/largeText" />
+
+    <myapp.net.inspire.font.AvenirRoman
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/marginTen"
+        android:gravity="center"
+        android:text="@string/tips_description"
+        android:textColor="@color/black"
+        android:textSize="@dimen/mediumText" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="@dimen/marginTen"
+        android:layout_marginTop="@dimen/marginTen"
+        android:background="@color/background" />
+
+    <myapp.net.inspire.font.AvenirRoman
+        android:id="@+id/ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/marginTen"
+        android:gravity="center"
+        android:text="OK"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/largeText"
+        android:textStyle="bold" />
+</LinearLayout>

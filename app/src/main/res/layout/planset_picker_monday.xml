@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mondayLayoutSetData"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle"
+        android:orientation="horizontal"
+        android:weightSum="6">
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/increaseByOneMonday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="all +1 hour"
+            android:textColor="@color/black"
+            android:textSize="@dimen/smallText" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/eatByMonday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/planBackground"
+            android:gravity="center"
+            android:text="Eat by"
+            android:textColor="@color/white"
+            android:textSize="@dimen/smallText" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/doseOneMonday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Dose One"
+            android:textColor="@color/black"
+            android:textSize="@dimen/smallText" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/doseTwoMonday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Dose Two"
+            android:textColor="@color/black"
+            android:textSize="@dimen/smallText" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/wakeMonday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Wake"
+            android:textColor="@color/black"
+            android:textSize="@dimen/smallText" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/decreaseByOneMonday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="all -1 hour"
+            android:textColor="@color/black"
+            android:textSize="@dimen/smallText" />
+    </LinearLayout>
+
+
+    <TimePicker
+        android:id="@+id/eatByTimePickerMonday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/marginFive"
+        android:scaleX="0.99"
+        android:scaleY=".90"
+        android:timePickerMode="spinner"
+        tools:targetApi="lollipop" />
+
+    <TimePicker
+        android:id="@+id/doseOneTimePickerMonday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/marginFive"
+        android:scaleX="0.99"
+        android:scaleY=".90"
+        android:timePickerMode="spinner"
+        android:visibility="gone"
+        tools:targetApi="lollipop" />
+
+    <TimePicker
+        android:id="@+id/doseTwoTimePickerMonday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/marginFive"
+        android:scaleX="0.99"
+        android:scaleY=".90"
+        android:timePickerMode="spinner"
+        android:visibility="gone"
+        tools:targetApi="lollipop" />
+
+    <TimePicker
+        android:id="@+id/wakeTimePickerMonday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/marginFive"
+        android:scaleX="0.99"
+        android:scaleY=".90"
+        android:timePickerMode="spinner"
+        android:visibility="gone"
+        tools:targetApi="lollipop" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eat by reminder"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mediumText" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 hour before food deadline"
+                android:textColor="@color/black"
+                android:textSize="@dimen/smallText" />
+        </LinearLayout>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switchReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:theme="@style/SwitchCompatTheme" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dose 1 reminder"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mediumText" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15 minutes before bedtime"
+                android:textColor="@color/black"
+                android:textSize="@dimen/smallText" />
+        </LinearLayout>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switchDose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:theme="@style/SwitchCompatTheme" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/clickText" />
+
+        <RelativeLayout
+            android:id="@+id/napLayoutScheduleMonday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="@dimen/margin_8dp">
+
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/napsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/naps"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_18sp" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/chooseNap1Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="Choose >"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_18sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/clickText" />
+
+        <RelativeLayout
+            android:id="@+id/reminderLayoutMonday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="@dimen/margin_8dp">
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/reminderTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/reminer"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_18sp" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/remindersTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="Choose >"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_18sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/clickText" />
+
+        <RelativeLayout
+            android:id="@+id/soundsLayoutMonday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="@dimen/margin_8dp">
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/soundTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/sounds"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_18sp" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/soundTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="Choose >"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

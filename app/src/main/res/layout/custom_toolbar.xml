@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    android:minHeight="?attr/actionBarSize"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <RelativeLayout
+        android:id="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <myapp.net.inspire.font.AmarelinhaBold
+            android:layout_toRightOf="@id/titleLeft"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:text="Test"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_toolbar" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/titleLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:text=""
+            android:layout_marginRight="@dimen/margin_8dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/largeText" />
+
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/titleRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/marginTwenty"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/largeText" />
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.Toolbar>
+
+

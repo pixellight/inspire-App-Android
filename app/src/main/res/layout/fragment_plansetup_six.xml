@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/actionLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:orientation="vertical">
+
+                <myapp.net.inspire.font.AvenirRoman
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/schedule_optional_naps"
+                    android:textColor="@color/planBackground"
+                    android:textSize="@dimen/font_24sp" />
+
+                <myapp.net.inspire.font.AvenirMedium
+                    android:id="@+id/nap1TimeTextview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nap_description"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_18sp"
+                    android:layout_marginTop="@dimen/margin_8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/margin_8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/margin_8dp"
+                        android:paddingTop="@dimen/margin_8dp">
+
+                        <RelativeLayout
+                            android:id="@+id/napOneLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/margin_4dp">
+
+                            <myapp.net.inspire.font.AvenirRoman
+                                android:id="@+id/nap1Textview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="@string/nap1"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_18sp" />
+
+                            <myapp.net.inspire.font.AvenirRoman
+                                android:id="@+id/chooseNap1Textview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/choose"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_18sp" />
+                        </RelativeLayout>
+
+                        <include layout="@layout/nap_one_layout" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/napView"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/planBackground" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/margin_8dp"
+                        android:paddingTop="@dimen/margin_8dp">
+
+                        <RelativeLayout
+                            android:id="@+id/napTwoLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/margin_4dp">
+
+                            <myapp.net.inspire.font.AvenirRoman
+                                android:id="@+id/napTwoTextview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:text="@string/nap2"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="@dimen/font_18sp" />
+
+                            <myapp.net.inspire.font.AvenirRoman
+                                android:id="@+id/chooseNaptwoTextview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/choose"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="@dimen/font_18sp" />
+                        </RelativeLayout>
+
+                        <include layout="@layout/nap_two_layout" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/napTwoView"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/planBackground" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/margin_8dp"
+                        android:paddingTop="@dimen/margin_8dp">
+
+                        <RelativeLayout
+                            android:id="@+id/napThreeLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/margin_4dp">
+
+                            <myapp.net.inspire.font.AvenirRoman
+                                android:id="@+id/napThreeTextview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="@string/nap3"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="@dimen/font_18sp" />
+
+                            <myapp.net.inspire.font.AvenirRoman
+                                android:id="@+id/chooseNapThreeTextview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/choose"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="@dimen/font_18sp" />
+                        </RelativeLayout>
+
+                        <include layout="@layout/nap_three_layout" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/napThreeView"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/planBackground" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/actionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/margin_16dp">
+
+            <ImageButton
+                android:id="@+id/previousSixButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginLeft="@dimen/margin_32dp"
+                android:background="@drawable/previous_button" />
+
+            <ImageButton
+                android:id="@+id/nextSixButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginRight="@dimen/margin_32dp"
+                android:background="@drawable/button_next" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

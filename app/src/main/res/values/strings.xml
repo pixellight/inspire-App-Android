@@ -1,0 +1,164 @@
+<resources>
+    <string name="app_name">Inspire+</string>
+    <string name="learn">Learn</string>
+    <string name="plane">Plan</string>
+    <string name="track">Track</string>
+    <string name="more">More</string>
+    <string name="whatis">What is XYREM?</string>
+    <string name="step_by_step">Step-by-Step Dosing</string>
+    <string name="tips_for">Tips for Taking XYREM</string>
+    <string name="treatmentWith">Treatment with XYREM</string>
+    <string name="sleep_habit">Sleep Habits Quiz</string>
+    <string name="learn_content_button">XYREM® (sodium oxybate) oral solution, 0.5 g/mL is a prescription medicine indicated for the following symptoms of narcolepsy: Excessive daytime sleepiness (EDS) I Cataplexy.\n\nXYREM may only be given to patients enrolled in the XYREM REMS Program.</string>
+    <string name="version_copyright"><![CDATA[Version & Copyright]]></string>
+    <string name="privacy"><![CDATA[Disclaimer & Privacy]]></string>
+    <string name="imp_saftey">Important Safety Information</string>
+    <string name="full_prescribe_info">Full Prescribing Information</string>
+    <string name="support">Support</string>
+    <string name="tutorial">Tutorials</string>
+    <string name="progress">Progress</string>
+    <string name="reports">Reports</string>
+    <string name="notes">Notes</string>
+    <string name="reflils">Refills</string>
+    <string name="sitting">Sitting and reading</string>
+    <string name="sitting_inactive">Sitting inactive in a publice place, such as a theater or a meeting</string>
+    <string name="passenger_car">As a passenger in a car for an hour without a break</string>
+    <string name="lying_down">Lying down to rest in the afternoon when circumstances permit</string>
+    <string name="sitting_talking">Sitting and talking to someone</string>
+    <string name="sitting_quitely">Sitting quitely after a lunch without alcohol</string>
+    <string name="sitting_incar">In a car, while stopped for a few minutes in traffic.</string>
+    <string name="compared">Compared to before you started taking XYREM, how frequent are your cataplexy attacks today?</string>
+    <string name="edit_note_step">1.  Are there any activities I should avoid?\n\n 2.  A re there any diet or exercise programs or schedule that will help control my symptoms?\n\n 3.  How should I incorporate napping into my schedule?\n\n 4.  What type of sleep schedule will benefit me most?\n\n 5.  Over time, can l expect my symptoms to stay the same? Progress? Improve?</string>
+    <string name="neverDose">0 = \nWould\nnever\ndoze</string>
+    <string name="slightDozing">1 = \nSlight\nchance of\ndozing</string>
+    <string name="moderateDosing">2 = \nModerate\nchance of\ndozing</string>
+    <string name="highDosing">3 = \nHigh\nchance of\ndozing</string>
+    <string name="reminder_content">If you don\'t take dose 1 at your scheduled time you may need to reschedule dose 2 to be taken 2½ to 4 hours after taking dose 1 or as directed by your prescriber.\n\nTo receive plan notifications they must be set to \"allow\" in Android settings>notifications. Alarm sounds will not be heard if the volume is turned down or set to vibrate mode.</string>
+    <string name="question">1.\u0020 \u0020Are there any activities I should avoid?\n\n\n
+2.\u0020 \u0020Are there any diet or exercise programs or
+schedule that will help control my symptoms?\n\n\n
+3.\u0020 \u0020How should I incorporate napping into my
+schedule?\n\n\n
+4.\u0020 \u0020What type of sleep schedule will benefit me
+most?\n\n\n
+5.\u0020 \u0020Over time, can l expect my symptoms to stay
+the same? Progress? Improve?</string>
+
+    <string name="things_to_tell_your_doctor">1.\u0020 \u0020Questions or concerns you have about your medications or your condition\n\n\n
+2.\u0020 \u0020Challenges with your Xyrem medication routine\n\n\n
+3.\u0020 \u0020Changes in your symptoms or how you feel\n\n\n
+4.\u0020 \u0020New medications (prescription, OTC, herbals, etc.) you\'re taking</string>
+    <string name="all_question_required">ALL\nQUESTION\nREQUIRED</string>
+    <string name="title_activity_web">WebActivity</string>
+    <string name="schedule_optional_naps">Schedule Optional Naps</string>
+    <string name="nap_description">You can add up to 3 naps to your daily plan if you\'d like, or click next.</string>
+    <string name="nap1">Nap1</string>
+    <string name="choose">Choose</string>
+    <string name="cancel">Cancel</string>
+    <string name="min">min</string>
+    <string name="naps">Naps</string>
+    <string name="reminer">Reminders</string>
+    <string name="nap2">Nap 2</string>
+    <string name="nap3">Nap 3</string>
+    <string name="nap_reminder">Nap Reminder</string>
+    <string name="dose_one_reminder">Dose 1 Reminder</string>
+    <string name="eat_by_reminder">Eat by Reminder</string>
+    <string name="select_your_reminder">Select Your Reminders</string>
+    <string name="reminder_description">Inspire+ can let you know about upcoming plan events.</string>
+    <string name="sounds">Sounds</string>
+    <string name="select_your_alarm_sounds">Select Your Alarm Sounds</string>
+    <string name="alarm_description">Use the defaults or choose what works best for you.</string>
+    <string name="dose1">Dose 1</string>
+    <string name="alarm_clock">Alarm Clock</string>
+    <string name="dose2">Dose 2</string>
+    <string name="wake">Wake</string>
+    <string name="nap_start">Nap Start</string>
+    <string name="nap_end">Nap End</string>
+    <string name="plan_setup">Let\'s setup a plan that\'s perfect for your schedule.\n\nAnswer
+     the following questions about your typical day and we\'ll put it together for you.\n\nAt the end, you can adjust specific days
+    to meet your needs.</string>
+    <string name="wakeup_time">Wake Up Time</string>
+    <string name="wakeup_time_description">What time would you like to wake up?</string>
+    <string name="time_between_dose_wake"><![CDATA[Time Between Dose 2 & Wake]]></string>
+    <string name="how_much_time_description">How much time do you want to schedule between dose 2 and wake?</string>
+    <string name="time_between_doses">Time Between Doses</string>
+    <string name="prescribe_time_description">What is your prescribed time between dose 1 and dose 2?</string>
+    <string name="eat_dinner_by">Eat dinner by:</string>
+    <string name="take_dose1_by">Take dose 1 at:</string>
+    <string name="take_dose2_by">Take dose 2 at:</string>
+    <string name="wakeup_at">Wake up at:</string>
+    <string name="plan_complete">Plan Complete!</string>
+    <string name="plan_complete_description">Based on your selections, Inspire+ has prepared a weekly schedule for you.\n\nNext, you can adjust any day of the schedule as needed.</string>
+    <string name="inspire_tips">Inspire Tip!</string>
+    <string name="tips_description">When planning your schedule,\nremember you need to take your first\ndose of XYREM at bedtime while you\nare in bed.</string>
+    <string name="reset">Reset</string>
+    <string name="confirm_your_result">Confirm Your Results</string>
+    <string name="confirm_description">Based on your answers, this is a typical day\'s schedule. Click next to confirm.</string>
+    <string name="select_anyday_to_adjust">Select any day to adjust it\'s schedule</string>
+    <string name="back"><b>&#x2190;</b></string>
+    <string name="suspend">Suspend</string>
+    <string name="change">Change</string>
+    <string name="reset_description">Reset plan will completely clear the \ncurrent seven day schedule. After\nreset, you can setup a new plan.\n\nReset plan does not clear any existing\n reports data.</string>
+    <string name="reset_plan">Reset Plan</string>
+    <string name="delete">DELETE</string>
+    <string name="delete_warning">Are you sure want to delete this note ?</string>
+    <string name="motivation_quotes">Got progress to brag about? Share your report with your doctor right from your phone</string>
+    <string name="significantly_fever">0 =\nSignificantly\nfever</string>
+    <string name="somewhat_fever">1 =\n Somewhat\nfever</string>
+    <string name="the_same">2 =\nThe same</string>
+    <string name="more_cataplexy">3 =\nMore</string>
+    <string name="started">Started</string>
+    <string name="empty">Empty</string>
+    <string name="refill_reminder">Refill Reminder</string>
+    <string name="eds_0_10">0-10 =\nNormal</string>
+    <string name="eds_11_12">11-12 =\nMild</string>
+    <string name="eds_13_15">13-15 =\nModerate</string>
+    <string name="eds_16_24">16-24 =\nSevere</string>
+    <string name="app_version">App Version:</string>
+    <string name="build">Build:</string>
+    <string name="copyright">"\u00A9 2018 Jazz Pharmaceuticals plc"\nor its subsidiaries</string>
+    <string name="address">XYR-0288 (1) Rev1018</string>
+    <string name="sleep_habit_quiz_description">Having healthy sleep habits can help you feel less sleep and more alert during the day. Take this short quiz to test your knowledge, and learn more about healthy sleep habits.</string>
+    <string name="dose_notification_des">Take the dose while your are in bed and remain in bed afterwards. Take your seconde dose betwen 2½ to 4 hours after your first dose, or as prescribed by your doctor.</string>
+    <string name="disclaimer"><u>Disclaimer</u></string>
+    <string name="disclaimer_description">The Inspire+ app is intended for educational, planning and tracking purposes only, and cannot be used as a diagnostic device. The Inspire+ app is not intended to offer or replace professional medical advice. Your healthcare professional is the single best source of information; please consult them if you have any questions about your health or treatment. Proper dosing and administration must be discussed with
+        and prescribed by your physician. You are encouraged to report negative side effects of prescription drugs to the FDA. Visit www.fda/gov/medwatch or call 1-800-FDA-1088.\n\nJazz Pharmaceuticals plc or its subsidiaries (“Jazz Pharmaceuticals”) make no express or implied representations or warranties of any kind or nature with respect to any of the information contained on this application or the operability of the application. Jazz Pharmaceuticals  disclaims all representations and/or warranties, express or implied, created by law, contract or otherwise, including without limitation, any warranties of merchantability, fitness for a particular purpose, title or noninfringement.  In no event shall Jazz Pharmaceuticals  be liable for any damages of any kind or nature, including without limitation, direct, indirect, special, consequential or incidental damages arising from or in connection with the existence or use of the Inspire+ app and/or the information.</string>
+    <string name="privacy_first"><u>Privacy</u></string>
+    <string name="privacy_description">Jazz Pharmaceuticals respects the privacy of those who use its mobile applications and is committed to the protection of personal information.  The Inspire+ app does not automatically collect personal information about users. All personal information and data entered into the application by the user remains exclusively on the user’s mobile
+        device unless the user in their sole discretion takes actions to transfer the data to other systems or parties.\n\nNon-Personal Information may be collected, such as the type of mobile device used, the mobile device unique device ID, the IP address of the mobile device, the mobile operating system, non-precise geolocation information and information about the way the user uses the Application. This Application does not collect precise information about the location of your mobile device.
+        This information is used for our business purposes such as data analysis, improving our products and services and identifying usage trends,
+        and to help diagnose problems with our servers and applications and for purposes of system administration.  Jazz Pharmaceuticals will treat any information it collects through the
+        Inspire+ app consistent with the terms of the Jazz Pharmaceuticals Privacy Policy, which can be found at www.jazzpharma.com.  Jazz Pharmaceuticals may change or modify the Privacy Policy from time to
+        time and therefore you should check the Privacy Policy when you use this Application.  By using this application, the user is agreeing to the collection of information through the application as described in
+        this Policy.\n\nYou may opt-out of all collection of information by uninstalling the Application from your mobile device.  You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace or network. </string>
+    <string name="security"><u>Security</u></string>
+    <string name="security_description"><![CDATA[Although Jazz Pharmaceuticals uses reasonable physical, electronic, and procedural safeguards to protect information as it is transmitted to Jazz Pharmaceuticals, the confidentiality of any personal information or the transmission of data via the Internet or email is not completely secure or error-free, and Jazz Pharmaceuticals cannot guarantee the security of any data or personal information transmitted through the application.  The user should also recognize that use of the application is solely at their own risk. Jazz Pharmaceuticals encourages the user to lock their phone, iPad or other device to increase the security of personal information. The user is solely responsible for protecting the application data on their mobile device from loss through a backup process. Jazz Pharmaceuticals shall have no obligation to furnish any maintenance and support services with respect to the Inspire+ app.]]></string>
+    <string name="notification"><u>Notification</u></string>
+    <string name="notification_description"><![CDATA[The Inspire+ app uses IOS Notifications to help keep you on your scheduled plan and for program messages. To receive plan notifications they must be set to “allow” in IOS settings>notifications. Alarm sounds will not be heard if the volume is turned down or set to vibrate mode.]]></string>
+    <string name="support_1">For questions about XYREM, call your doctor or the Certified Pharmacy at SDS at 1-866-997-3688</string>
+    <string name="support_2">If you need technical support for the Inspire+ android app, please complete this form.</string>
+    <string name="app_email">inspireplusapp@gmail.com</string>
+
+    <!--tips-->
+    <string name="days_tips_90">Experts say it may take between 60 and 90 days to form a new habit. You made it, Congrats!</string>
+    <string name="days_tips_45">WOW! That\'s a new record. 45 days of active use. You are on a roll!</string>
+    <string name="days_tips_28">Congrats! You have kept to your daily plan for a month!</string>
+    <string name="days_tips_30">You broke your record! Congrats on tracking for one month! View your report to see your progress.</string>
+    <string name="days_tips_14">WOW! That\'s a new record. You have learned, panned, and tracked for 14 days. Keep up the good work!</string>
+    <string name="days_tips_7">Hey there, super symptom tracker! Congrats on your new record of 7 days.</string>
+    <string name="days_tips_7_confim_all_events">Way to go! You stayed on top of your schedule for an entire week. Keep up the great work.</string>
+
+    <string name="every_10_days_confirm_all_events_within_15mins">Congrats! Yesterday you were right on schedule with all planned events. Keep up the great work.</string>
+    <string name="every_10_days_not_confirm_all_events_within_15mins">Almost there! Confirm all planned events within 15 minutes to stay right on schedule. Keep at it.</string>
+    <string name="yesterday_track_tips">You are on a roll! Way to track your symptoms yesterday. Keep up the great work.</string>
+    <string name="confirm_0_events_within_10days">Active use can help you stay on top of your plan. Can you get back on track tomorrow? We bet you can!</string>
+    <string name="confirm_eatby_but_not_other_events_within_10days">Don\'t forget to track your EDS and cataplexy symptoms. We\'ll create a shareable progress report for you!</string>
+    <string name="tips_13">Using your app to confirm your doses may help you stick with your dosing plan. Give it a try!</string>
+    <string name="tips_14">Can using your app to confirm doses and track symptoms help? Inspire+ app users think so! Give it a try!</string>
+    <string name="tips_15">Got progress to brag about? Share your report with your doctor right from your phone</string>
+    <string name="tips_16">Tip! User the Notes feature to start a list of questions for your doctor. Add more as they come up.</string>
+    <string name="tips_17">Take scheduled naps? Add alarms to remind you when it\'s time to get some rest</string>
+    <string name="tips_18">Click here to check out the latest from Inspire Program community members just like you.</string>
+    <string name="tips_19">Fun Fact! Sunday is the most active day for Inspire+ app users. How often do you check-in with your plan?</string>
+
+</resources>

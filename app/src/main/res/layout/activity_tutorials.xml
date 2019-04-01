@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="myapp.net.inspire.MainActivity">
+
+
+    <include
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           >
+
+            <LinearLayout
+                android:id="@+id/inspirePlusTutorialLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <myapp.net.inspire.font.AvenirRoman
+                    android:id="@+id/button"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.9"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/margin_16dp"
+                    android:text="Inspire+ Tutorial"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_action_arrow_right" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/inspirePlusV2TutorialLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <myapp.net.inspire.font.AvenirRoman
+                    android:id="@+id/button2"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.9"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/margin_16dp"
+                    android:text="Inspire+ v2 Tutorial"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_action_arrow_right" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/planBackground" />
+
+            <LinearLayout
+                android:id="@+id/learnTutorialLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <myapp.net.inspire.font.AvenirRoman
+                    android:id="@+id/button3"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.9"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/margin_16dp"
+                    android:text="Learn Tutorial"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_action_arrow_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/planBackground" />
+
+            <LinearLayout
+                android:id="@+id/planTutorialLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <myapp.net.inspire.font.AvenirRoman
+                    android:id="@+id/button4"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.9"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/margin_16dp"
+                    android:text="Plan Tutorial"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_action_arrow_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/planBackground" />
+
+            <LinearLayout
+                android:id="@+id/trackTutorialLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <myapp.net.inspire.font.AvenirRoman
+                    android:id="@+id/button5"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.9"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/margin_16dp"
+                    android:text="Track Tutorial"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_action_arrow_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/planBackground" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_info_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blackDim"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/fullPrescribeInformationTutorial"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Full Prescribing Information"
+                android:textColor="@color/black"
+                android:textSize="@dimen/smallText" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/importantSafetyInformationTutorial"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Important Safety Information"
+                android:textColor="@color/black"
+                android:textSize="@dimen/smallText" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

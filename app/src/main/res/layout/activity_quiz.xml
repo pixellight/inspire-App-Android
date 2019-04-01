@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".quiz.QuizActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/margin_32dp"
+        android:layout_marginLeft="@dimen/margin_32dp">
+
+
+    <myapp.net.inspire.font.AvenirRoman
+        android:id="@+id/questionNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/margin_32dp"
+        android:layout_marginEnd="8dp"
+        android:padding="@dimen/margin_8dp"
+        android:text="Question 1 of 5"
+        android:textAlignment="center"
+        android:textColor="@color/planBackground"
+        android:textSize="@dimen/font_24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:padding="@dimen/margin_4dp"
+        android:text="Question"
+        android:fontFamily="@font/gotham_light"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_18sp" />
+
+    <Button
+        android:id="@+id/trueButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/quiz_answer_unchecked"
+        android:text="True"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/falseButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/quiz_answer_unchecked"
+        android:text="False"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/answerCorrect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:text="Answer"
+            android:textAlignment="center"
+            android:textColor="@color/planBackground"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/explaination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:fontFamily="@font/gotham_light"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/transparent"
+        android:scaleType="fitStart"
+        android:layout_gravity="center"
+        android:src="@drawable/button_next"
+        android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

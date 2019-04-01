@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cataplexyLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/cataplexyContentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/marginTen">
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="@string/compared"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/smallText" />
+
+            <ImageView
+                android:id="@+id/quesCataplexy_zero"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/marginTwo"
+                android:src="@drawable/zero_off" />
+
+            <ImageView
+                android:id="@+id/quesCataplexy_one"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/marginTwo"
+                android:layout_marginStart="@dimen/marginTwo"
+                android:src="@drawable/one_off" />
+
+            <ImageView
+                android:id="@+id/quesCataplexy_two"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/marginTwo"
+                android:layout_marginStart="@dimen/marginTwo"
+                android:src="@drawable/two_off" />
+
+            <ImageView
+
+                android:id="@+id/quesCataplexy_three"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/marginTwo"
+                android:layout_marginStart="@dimen/marginTwo"
+                android:src="@drawable/three_off" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/cataplexyContentLayout"
+            android:background="@color/planBackground" />
+
+        <LinearLayout
+            android:id="@+id/cataplexyLayoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/background"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/marginFive"
+            android:paddingTop="@dimen/marginFive"
+            android:visibility="gone"
+            android:weightSum="4">
+
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/marginTen"
+                android:layout_marginStart="@dimen/marginTen"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/significantly_fever"
+                android:textColor="@color/black"
+                android:textSize="@dimen/verySmall" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/marginTen"
+                android:layout_marginStart="@dimen/marginTen"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/somewhat_fever"
+                android:textColor="@color/black"
+                android:textSize="@dimen/verySmall" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/marginTen"
+                android:layout_marginStart="@dimen/marginTen"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/the_same"
+                android:textColor="@color/black"
+                android:textSize="@dimen/verySmall" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/marginTen"
+                android:layout_marginStart="@dimen/marginTen"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/more_cataplexy"
+                android:textColor="@color/black"
+                android:textSize="@dimen/verySmall" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

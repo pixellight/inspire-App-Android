@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/addNoteLayoutDoctor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="335dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="Add a note"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/mediumText" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:backgroundTint="@color/blackDim"
+            android:src="@drawable/ic_action_arrow_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addNoteLayoutToDo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="335dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="Add a note"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/mediumText" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:backgroundTint="@color/blackDim"
+            android:src="@drawable/ic_action_arrow_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addNoteLayoutOther"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="335dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="Add a note"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/mediumText" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:backgroundTint="@color/blackDim"
+            android:src="@drawable/ic_action_arrow_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/planBackground" />
+
+    <LinearLayout
+        android:id="@+id/askQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/marginTwenty"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/negative" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/marginTwenty"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="Question to ask"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/mediumText" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="06/22/18"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/mediumText" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="40dp"
+        android:background="@color/planBackground"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/marginTwenty"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/negative" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/marginTwenty"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="Things to tell your doctor"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/mediumText" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="06/22/18"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/mediumText" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="40dp"
+        android:background="@color/planBackground"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/doctorNoteRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/toDoNoteRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/otherNoteRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</LinearLayout>

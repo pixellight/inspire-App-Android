@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="myapp.net.inspire.MainActivity"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <FrameLayout
+            android:id="@+id/fragmennt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        >
+        <LinearLayout
+            android:id="@+id/loadLearn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@drawable/ic_learn"
+                android:tint="@color/imageTint"
+                android:adjustViewBounds="true"
+                android:layout_width="@dimen/imageDimen"
+                android:layout_height="@dimen/imageDimen" />
+            <myapp.net.inspire.font.AvenirRoman
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/imageTint"
+                android:text="@string/learn"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/loadPlane"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@drawable/ic_plane"
+                android:tint="@color/imageTint"
+                android:layout_width="@dimen/imageDimen"
+                android:layout_height="@dimen/imageDimen" />
+            <myapp.net.inspire.font.AvenirRoman
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/imageTint"
+                android:text="@string/plane"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/loadTrack"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@drawable/ic_track"
+                android:tint="@color/imageTint"
+                android:layout_width="@dimen/imageDimen"
+                android:layout_height="@dimen/imageDimen" />
+            <myapp.net.inspire.font.AvenirRoman
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/imageTint"
+                android:text="@string/track"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/loadMore"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@drawable/ic_more"
+                android:tint="@color/imageTint"
+                android:layout_width="@dimen/imageDimen"
+                android:layout_height="@dimen/imageDimen" />
+            <myapp.net.inspire.font.AvenirRoman
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/imageTint"
+                android:text="@string/more"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

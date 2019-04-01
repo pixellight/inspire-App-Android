@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <myapp.net.inspire.font.AvenirRoman
+            android:textColor="@color/black"
+            android:text="Questions to ask"
+            android:textSize="@dimen/largeText"
+            android:padding="@dimen/marginFive"
+            android:layout_margin="@dimen/marginTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_color"/>
+        <myapp.net.inspire.font.AvenirRoman
+            android:textColor="@color/black"
+            android:text="@string/edit_note_step"
+            android:textSize="@dimen/largeText"
+            android:padding="@dimen/marginFive"
+            android:layout_margin="@dimen/marginTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_color"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/background"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <myapp.net.inspire.font.AvenirRoman
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Full Prescribing Information"
+            android:textSize="@dimen/smallText"
+            android:textColor="@color/black"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+        <myapp.net.inspire.font.AvenirRoman
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Important Safety Information"
+            android:textSize="@dimen/smallText"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</LinearLayout>

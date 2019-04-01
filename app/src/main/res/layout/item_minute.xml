@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <myapp.net.inspire.font.AvenirRoman
+        android:id="@+id/minutesTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_16dp"
+        android:paddingRight="@dimen/margin_16dp"
+        android:text="5"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_18sp" />
+
+    <myapp.net.inspire.font.AvenirRoman
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/min"
+        android:paddingLeft="@dimen/margin_16dp"
+        android:paddingRight="@dimen/margin_16dp"
+        android:textColor="@color/black" />
+
+</LinearLayout>

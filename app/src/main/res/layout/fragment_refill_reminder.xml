@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/startedLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_16dp"
+            android:weightSum="1">
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:text="@string/started"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_18sp" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/startedTextview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="right"
+                android:text="Choose"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_18sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/planBackground" />
+
+        <DatePicker
+            android:id="@+id/startedDatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/emptyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_16dp"
+            android:weightSum="1">
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:text="@string/empty"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_18sp" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/emptyTextview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_18sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/planBackground" />
+
+        <DatePicker
+            android:id="@+id/emptyDatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_16dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <myapp.net.inspire.font.AvenirRoman
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/refill_reminder"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/mediumText" />
+
+                <myapp.net.inspire.font.AvenirRoman
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7 days before empty"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/smallText" />
+            </LinearLayout>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switchRefill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:theme="@style/SwitchCompatTheme" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/planBackground" />
+    </LinearLayout>
+
+</LinearLayout>

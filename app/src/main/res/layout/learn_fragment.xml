@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+
+            android:paddingTop="@dimen/margin_4dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/whatIsInspire"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/marginTen"
+                android:layout_marginTop="@dimen/margin_8dp">
+
+                <ImageView
+                    android:id="@+id/whatIsInspireimageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/new_info"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <RelativeLayout
+                    android:id="@+id/whatIsInspireprogressImageBackground"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/icon_background"
+                    android:cropToPadding="true"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/whatIsInspireimageView"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/whatIsInspireimageView3"
+                        android:layout_width="@dimen/arrow_size"
+                        android:layout_height="@dimen/arrow_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="19dp"
+                        android:src="@drawable/ic_next_arrow"
+                        android:tint="@color/blackDim"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <myapp.net.inspire.font.AvenirRoman
+                        android:id="@+id/whatIsInspireprogress_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="The Inspire Program"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/xyremDescribe"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/marginTen"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/marginTen">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/question"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <RelativeLayout
+                    android:id="@+id/progressImageBackground"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/icon_background"
+                    android:cropToPadding="true"
+                    android:scaleType="centerInside"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="@dimen/arrow_size"
+                        android:layout_height="@dimen/arrow_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="19dp"
+                        android:src="@drawable/ic_next_arrow"
+                        android:tint="@color/blackDim"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <myapp.net.inspire.font.AvenirRoman
+                        android:id="@+id/progress_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/whatis"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/stepbystepDosing"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/marginTen"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/marginTen">
+
+                <ImageView
+                    android:id="@+id/imageViewstepbystepDosing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/step_by_step"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <RelativeLayout
+                    android:id="@+id/stepbystepDosingImageBackground"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/icon_background"
+                    android:cropToPadding="true"
+                    android:scaleType="centerInside"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewstepbystepDosing"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageView3stepbystepDosing"
+                        android:layout_width="@dimen/arrow_size"
+                        android:layout_height="@dimen/arrow_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="19dp"
+                        android:src="@drawable/ic_next_arrow"
+                        android:tint="@color/blackDim"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <myapp.net.inspire.font.AvenirRoman
+                        android:id="@+id/stepbystepDosing_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/step_by_step"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <!--
+           <LinearLayout
+               android:id="@+id/stepbystepDosing"
+
+               android:layout_width="match_parent"
+               android:layout_height="80dp"
+               android:background="@drawable/learn_second"
+               android:orientation="horizontal"
+               android:weightSum="4">
+               <LinearLayout
+                   android:layout_marginStart="@dimen/marginTen"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"/>
+
+               <qpaysolutions.net.inspire.font.AvenirRoman
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="3"
+                   android:gravity="center|left"
+                   android:textSize="@dimen/largeText"
+                   android:text="@string/step_by_step"
+                   android:textColor="@color/black" />
+
+               <ImageView
+                   android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   android:layout_gravity="center|right"
+                   android:layout_marginEnd="20dp"
+                   android:src="@drawable/ic_next_arrow" />
+           </LinearLayout>-->
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/tipsForTakingXYREM"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/marginTen"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/marginTen">
+
+                <ImageView
+                    android:id="@+id/imageViewtipsForTakingXYREM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/like_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <RelativeLayout
+                    android:id="@+id/tipsForTakingXYREMImageBackground"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/icon_background"
+                    android:cropToPadding="true"
+                    android:scaleType="centerInside"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewtipsForTakingXYREM"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageView3tipsForTakingXYREM"
+                        android:layout_width="@dimen/arrow_size"
+                        android:layout_height="@dimen/arrow_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="19dp"
+                        android:src="@drawable/ic_next_arrow"
+                        android:tint="@color/blackDim"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <myapp.net.inspire.font.AvenirRoman
+                        android:id="@+id/tipsForTakingXYREM_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tips_for"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/treatmentWithXYREM"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/marginTen"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/marginTen"
+
+                >
+
+                <ImageView
+                    android:id="@+id/imageViewtreatmentWithXYREM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/treatment_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <RelativeLayout
+                    android:id="@+id/treatmentWithXYREMImageBackground"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/icon_background"
+                    android:cropToPadding="true"
+                    android:scaleType="centerInside"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewtreatmentWithXYREM"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageView3treatmentWithXYREM"
+                        android:layout_width="@dimen/arrow_size"
+                        android:layout_height="@dimen/arrow_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="19dp"
+                        android:src="@drawable/ic_next_arrow"
+                        android:tint="@color/blackDim"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <myapp.net.inspire.font.AvenirRoman
+                        android:id="@+id/treatmentWithXYREM_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/treatmentWith"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <!--
+                <LinearLayout
+                    android:id="@+id/treatmentWithXYREM"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/learn_fourth"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/marginTen"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                    <qpaysolutions.net.inspire.font.AvenirRoman
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center|left"
+                        android:text="@string/treatmentWith"
+                        android:textSize="@dimen/largeText"
+                        android:textColor="@color/black" />
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center|right"
+                        android:layout_marginEnd="20dp"
+                        android:src="@drawable/ic_next_arrow" />
+                </LinearLayout>-->
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/sleepHabitquioz"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/marginTen"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/marginTen"
+
+                >
+
+                <ImageView
+                    android:id="@+id/imageViewsleepHabitquioz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sleep_habits_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <RelativeLayout
+                    android:id="@+id/sleepHabitquiozImageBackground"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/icon_background"
+                    android:cropToPadding="true"
+                    android:scaleType="centerInside"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewsleepHabitquioz"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageView3sleepHabitquioz"
+                        android:layout_width="@dimen/arrow_size"
+                        android:layout_height="@dimen/arrow_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="19dp"
+                        android:src="@drawable/ic_next_arrow"
+                        android:tint="@color/blackDim"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <myapp.net.inspire.font.AvenirRoman
+                        android:id="@+id/sleepHabitquioz_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sleep_habit"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/bottomLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_16dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:src="@drawable/xyremlogolearnscreen" />
+
+                <myapp.net.inspire.font.AvenirRoman
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/margin_16dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginRight="@dimen/margin_16dp"
+                    android:text="@string/learn_content_button"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

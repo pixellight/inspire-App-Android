@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <myapp.net.inspire.font.AvenirRoman
+        android:layout_margin="@dimen/marginTen"
+        android:padding="@dimen/marginTen"
+        android:background="@drawable/rectangle_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Questions to ask"
+        android:textSize="@dimen/largeText"
+        android:textColor="@color/black"/>
+    <myapp.net.inspire.font.AvenirRoman
+        android:layout_marginStart="@dimen/marginTen"
+        android:layout_marginEnd="@dimen/marginTen"
+        android:layout_marginBottom="@dimen/marginTen"
+        android:padding="@dimen/marginTen"
+        android:background="@drawable/rectangle_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/question"
+        android:textSize="@dimen/mediumText"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

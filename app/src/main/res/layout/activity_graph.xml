@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="myapp.net.inspire.MainActivity"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <FrameLayout
+            android:id="@+id/fragmennt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/></LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/bottomUp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center"
+        android:layout_gravity="center"
+
+        >
+       <LinearLayout
+
+           android:background="@color/planBackground"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:orientation="vertical"
+           android:padding="5dp">
+           <myapp.net.inspire.font.AvenirRoman
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="@dimen/smallText"
+               android:text="EDS Severity"
+               android:textColor="@color/white"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <myapp.net.inspire.font.AvenirRoman
+                   android:gravity="center"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="@dimen/verySmall"
+                   android:text="3 = Severe      2 = Moderate"
+                   android:textColor="@color/white"/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <myapp.net.inspire.font.AvenirRoman
+                   android:gravity="center"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="@dimen/smallText"
+                   android:text="1 = Mild      0 = Normal"
+                   android:textColor="@color/white"/>
+           </LinearLayout>
+
+
+       </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <myapp.net.inspire.font.AvenirRoman
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/smallText"
+                android:text="Cataplexy Frequency"
+                android:textColor="@color/white"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <myapp.net.inspire.font.AvenirRoman
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/verySmall"
+                    android:text="3 = More      2 = The same"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <myapp.net.inspire.font.AvenirRoman
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/smallText"
+                    android:text="1 = Somewhat fewer      0 = Significantly fewer"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blackDim"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <myapp.net.inspire.font.AvenirRoman
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Full Prescribing Information"
+            android:textSize="@dimen/smallText"
+            android:textColor="@color/black"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+        <myapp.net.inspire.font.AvenirRoman
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Important Safety Information"
+            android:textSize="@dimen/smallText"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TheInspireProgram">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomView"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16dp"
+                android:text="The Inspire Program"
+                android:textColor="@color/planBackground"
+                android:textSize="24sp" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_4dp"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginRight="@dimen/margin_16dp"
+                android:text="Personalized support to keep you motivated"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/margin_16dp"
+                    android:layout_weight="0.5"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/inspire_plus_logo_white" />
+
+                <ImageButton
+                    android:id="@+id/enrollBttn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_action_enroll" />
+
+            </LinearLayout>
+
+            <!--<ImageView-->
+            <!--android:id="@+id/imageView2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:cropToPadding="true"-->
+            <!--android:scaleType="centerInside"-->
+            <!--android:src="@drawable/enroll_now" />-->
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginRight="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:text="Love the Inspire+ app? Enroll in the Inspire program and choose when and how you’d like even more support"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="76dp"
+                        android:layout_height="66dp"
+                        android:layout_weight="0"
+                        app:srcCompat="@drawable/icon1" />
+
+                    <myapp.net.inspire.font.AvenirRoman
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="8"
+                        android:gravity="center_vertical"
+                        android:text="Emails with tips for following your treatment plan, growing your support network, and more"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView23"
+                        android:layout_width="76dp"
+                        android:layout_height="66dp"
+                        android:layout_weight="0"
+                        app:srcCompat="@drawable/icon2" />
+
+                    <myapp.net.inspire.font.AvenirRoman
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="8"
+                        android:gravity="center_vertical"
+                        android:text="Text messages to help keep you motivated and on track"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView4332"
+                        android:layout_width="76dp"
+                        android:layout_height="66dp"
+                        android:layout_weight="0"
+                        app:srcCompat="@drawable/icon3" />
+
+                    <myapp.net.inspire.font.AvenirRoman
+                        android:id="@+id/textView42323"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="8"
+                        android:gravity="center_vertical"
+                        android:text="Online activities to help you plan and set goals"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView43232"
+                        android:layout_width="76dp"
+                        android:layout_height="66dp"
+                        android:layout_weight="0"
+                        app:srcCompat="@drawable/icon4" />
+
+                    <myapp.net.inspire.font.AvenirRoman
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="8"
+                        android:gravity="center_vertical"
+                        android:text="Brochures to share with family and friends"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView423"
+                        android:layout_width="76dp"
+                        android:layout_height="66dp"
+                        android:layout_weight="0"
+                        app:srcCompat="@drawable/icon5" />
+
+                    <myapp.net.inspire.font.AvenirRoman
+                        android:id="@+id/textView4323"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="8"
+                        android:gravity="center_vertical"
+                        android:text="Stories, tips, and ideas from others just like you"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_info_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blackDim"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/fullPrescribingInformationProgram"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Full Prescribing Information"
+            android:textColor="@color/black"
+            android:textSize="@dimen/smallText" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/importantSafetyInformationProgram"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Important Safety Information"
+            android:textColor="@color/black"
+            android:textSize="@dimen/smallText" />
+
+    </LinearLayout>
+</RelativeLayout>

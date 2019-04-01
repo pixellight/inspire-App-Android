@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_8dp"
+            android:text="@string/version_copyright"
+            android:textColor="@color/planBackground"
+            android:textSize="@dimen/font_24sp"
+            android:layout_marginLeft="@dimen/margin_8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:layout_marginRight="@dimen/margin_16dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:orientation="horizontal">
+
+            <myapp.net.inspire.font.AvenirMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_4dp"
+                android:text="@string/app_version"
+                android:textColor="@color/black" />
+
+            <myapp.net.inspire.font.AvenirMedium
+                android:id="@+id/versionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_4dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:layout_marginRight="@dimen/margin_16dp"
+            android:orientation="horizontal">
+
+            <myapp.net.inspire.font.AvenirMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_4dp"
+                android:text="@string/build"
+                android:textColor="@color/black" />
+
+            <myapp.net.inspire.font.AvenirMedium
+                android:id="@+id/builTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_4dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:layout_marginRight="@dimen/margin_16dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:orientation="horizontal">
+
+            <myapp.net.inspire.font.AvenirMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_4dp"
+                android:text="@string/copyright"
+                android:textColor="@color/black" />
+
+            <myapp.net.inspire.font.AvenirMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_4dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:layout_marginRight="@dimen/margin_16dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:padding="@dimen/margin_4dp"
+            android:text="@string/address"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</LinearLayout>

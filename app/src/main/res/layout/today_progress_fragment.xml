@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mainLayoutProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tabHeight"
+            android:background="@drawable/rectangle"
+            android:weightSum="1">
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/edsSeverity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@color/planBackground"
+                android:gravity="center"
+                android:text="EDS Severity"
+                android:textColor="@color/white" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="@color/black" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/cataplexyFrequency"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+
+                android:text="Cataplexy Frequency"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/eds_severity_layout" />
+
+                    <include layout="@layout/cataplexy_layout" />
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/edsLayoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/marginFive"
+            android:paddingTop="@dimen/marginFive"
+            android:weightSum="5">
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/totalTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/marginTen"
+                android:layout_marginStart="@dimen/marginTen"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/all_question_required"
+                android:textColor="@color/black"
+                android:textSize="@dimen/verySmall" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/marginTen"
+                android:layout_marginStart="@dimen/marginTen"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/eds_0_10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/verySmall" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/marginTen"
+                android:layout_marginStart="@dimen/marginTen"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/eds_11_12"
+                android:textColor="@color/black"
+                android:textSize="@dimen/verySmall" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/marginTen"
+                android:layout_marginStart="@dimen/marginTen"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/eds_13_15"
+                android:textColor="@color/black"
+                android:textSize="@dimen/verySmall" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/marginTen"
+                android:layout_marginStart="@dimen/marginTen"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/eds_16_24"
+                android:textColor="@color/black"
+                android:textSize="@dimen/verySmall" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/noPlanLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#02348f"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/track_progress_first" />
+
+        <ImageButton
+            android:id="@+id/doneBttnProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="@dimen/margin_16dp"
+            android:background="@drawable/ic_action_done"
+            android:clickable="true"
+            android:padding="@dimen/margin_16dp" />
+
+    </FrameLayout>
+
+</LinearLayout>

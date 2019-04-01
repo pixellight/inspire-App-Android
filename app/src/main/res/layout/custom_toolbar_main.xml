@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    android:minHeight="?attr/actionBarSize"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <RelativeLayout
+        android:id="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/cross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_8dp"
+            android:text="X"
+            android:layout_marginEnd="@dimen/marginTwenty"
+            android:textColor="@color/white"
+            android:textSize="@dimen/largeText"
+            android:visibility="gone" />
+
+        <myapp.net.inspire.font.AmarelinhaBold
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_toRightOf="@+id/cross"
+            android:layout_weight="1"
+            android:text="Test"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_toolbar" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/titleLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/marginTwenty"
+            android:layout_toLeftOf="@id/titleRight"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/largeText" />
+
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/titleRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/marginTwenty"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/largeText" />
+    </RelativeLayout>
+
+
+</android.support.v7.widget.Toolbar>
+
+

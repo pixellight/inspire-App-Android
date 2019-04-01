@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/planBackground" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/darkThemeBackground"
+                            android:gravity="center"
+                            android:text="Eat by"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="1dp"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/darkThemeBackground"
+                            android:gravity="center"
+                            android:text="Dose 1"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="1dp"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/darkThemeBackground"
+                            android:gravity="center"
+                            android:text="Dose 2"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/darkThemeBackground"
+                            android:gravity="center"
+                            android:text="Wake"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/mediumText" />
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/planBackground" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sunday"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white">
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/sundayLeft"
+                            android:layout_width="30dp"
+                            android:layout_height="@dimen/dayHeight"
+                            android:layout_gravity="center"
+                            android:background="@color/planBackground"
+                            android:gravity="center"
+                            android:text="Su"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/largeText" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:weightSum="4">
+
+                            <myapp.net.inspire.font.AvenirRoman
+                                android:id="@+id/sundayEatByText"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="1dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="9:00 PM"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/mediumText" />
+
+                            <myapp.net.inspire.font.AvenirRoman
+                                android:id="@+id/sundayDoseOneText"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="1dp"
+                                android:layout_marginStart="1dp"
+                                android:layout_weight="1"
+                                android:background="@color/background"
+                                android:gravity="center"
+                                android:text="11:00PM"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/mediumText" />
+
+                            <myapp.net.inspire.font.AvenirRoman
+                                android:id="@+id/sundayDoseTwoText"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="1dp"
+                                android:layout_marginStart="1dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="3:00 PM"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/mediumText" />
+
+                            <myapp.net.inspire.font.AvenirRoman
+                                android:id="@+id/sundayWakeText"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="1dp"
+                                android:layout_weight="1"
+                                android:background="@color/background"
+                                android:gravity="center"
+                                android:text="7:00 AM"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/mediumText" />
+                        </LinearLayout>
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/sunRight"
+                            android:layout_width="30dp"
+                            android:layout_height="@dimen/dayHeight"
+                            android:layout_gravity="center"
+                            android:background="@color/planBackground"
+                            android:gravity="center"
+                            android:text="Mo"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/largeText" />
+
+                    </LinearLayout>
+                    <include layout="@layout/planset_picker_sunday"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/planBackground" />
+
+                    <LinearLayout
+                        android:id="@+id/monday"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white"
+                        android:weightSum="4">
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/monLeft"
+                            android:layout_width="30dp"
+                            android:layout_height="@dimen/dayHeight"
+                            android:layout_gravity="center"
+                            android:background="@color/planBackground"
+                            android:gravity="center"
+                            android:text="Mo"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/largeText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/mondayEatByText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="1dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="9:00 PM"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/mondayDoseOneText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="1dp"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/background"
+                            android:gravity="center"
+                            android:text="11:00PM"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/mondayDoseTwoText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="1dp"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="3:00 PM"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/mondayWakeText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/background"
+                            android:gravity="center"
+                            android:text="7:00 AM"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/moRight"
+                            android:layout_width="30dp"
+                            android:layout_height="@dimen/dayHeight"
+                            android:layout_gravity="center"
+                            android:background="@color/planBackground"
+                            android:gravity="center"
+                            android:text="Tu"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/largeText" />
+
+                    </LinearLayout>
+                    <include layout="@layout/planset_picker_monday"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/planBackground" />
+
+                    <LinearLayout
+                        android:id="@+id/tuesday"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white"
+                        android:weightSum="4">
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/tuLeft"
+                            android:layout_width="30dp"
+                            android:layout_height="@dimen/dayHeight"
+                            android:layout_gravity="center"
+                            android:background="@color/planBackground"
+                            android:gravity="center"
+                            android:text="Tu"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/largeText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/tuesdayEatByText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="1dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="9:00 PM"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/tuesdayDoseOneText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="1dp"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/background"
+                            android:gravity="center"
+                            android:text="11:00PM"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/tuesdayDoseTwoText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="1dp"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="3:00 PM"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/tuesdayWakeText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/background"
+                            android:gravity="center"
+                            android:text="7:00 AM"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/tuRight"
+                            android:layout_width="30dp"
+                            android:layout_height="@dimen/dayHeight"
+                            android:layout_gravity="center"
+                            android:background="@color/planBackground"
+                            android:gravity="center"
+                            android:text="We"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/largeText" />
+
+                    </LinearLayout>
+
+                    <include layout="@layout/planset_picker_tuesday" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/planBackground" />
+
+                    <LinearLayout
+                        android:id="@+id/wensday"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white"
+                        android:weightSum="4">
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/weLeft"
+                            android:layout_width="30dp"
+                            android:layout_height="@dimen/dayHeight"
+                            android:layout_gravity="center"
+                            android:background="@color/planBackground"
+                            android:gravity="center"
+                            android:text="We"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/largeText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/wednesdayEatByText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="1dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="9:00 PM"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/wednesdayDoseOneText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="1dp"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/background"
+                            android:gravity="center"
+                            android:text="11:00PM"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/wednesdayDoseTwoText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="1dp"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="3:00 PM"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/wednesdayWakeText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/background"
+                            android:gravity="center"
+                            android:text="7:00 AM"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/weRight"
+                            android:layout_width="30dp"
+                            android:layout_height="@dimen/dayHeight"
+                            android:layout_gravity="center"
+                            android:background="@color/planBackground"
+                            android:gravity="center"
+                            android:text="Th"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/largeText" />
+
+                    </LinearLayout>
+                    <include layout="@layout/planset_picker_wednesday"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/planBackground" />
+
+                    <LinearLayout
+                        android:id="@+id/thursday"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white"
+                        android:weightSum="4">
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/thLeft"
+                            android:layout_width="30dp"
+                            android:layout_height="@dimen/dayHeight"
+                            android:layout_gravity="center"
+                            android:background="@color/planBackground"
+                            android:gravity="center"
+                            android:text="Th"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/largeText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/thursdayEatByText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="1dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="9:00 PM"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/thursdayDoseOneText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="1dp"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/background"
+                            android:gravity="center"
+                            android:text="11:00PM"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/thursdayDoseTwoText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="1dp"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="3:00 PM"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/thursdayWakeText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/background"
+                            android:gravity="center"
+                            android:text="7:00 AM"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/thRight"
+                            android:layout_width="30dp"
+                            android:layout_height="@dimen/dayHeight"
+                            android:layout_gravity="center"
+                            android:background="@color/planBackground"
+                            android:gravity="center"
+                            android:text="Fr"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/largeText" />
+
+                    </LinearLayout>
+                    <include layout="@layout/planset_picker_thursday"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/planBackground" />
+
+                    <LinearLayout
+                        android:id="@+id/friday"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white"
+                        android:weightSum="4">
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/frLeft"
+                            android:layout_width="30dp"
+                            android:layout_height="@dimen/dayHeight"
+                            android:layout_gravity="center"
+                            android:background="@color/planBackground"
+                            android:gravity="center"
+                            android:text="Fr"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/largeText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/fridayEatByText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="1dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="9:00 PM"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/fridayDoseOneText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="1dp"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/background"
+                            android:gravity="center"
+                            android:text="11:00PM"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/fridayDoseTwoText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="1dp"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="3:00 PM"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/fridayWakeText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/background"
+                            android:gravity="center"
+                            android:text="7:00 AM"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/frRight"
+                            android:layout_width="30dp"
+                            android:layout_height="@dimen/dayHeight"
+                            android:layout_gravity="center"
+                            android:background="@color/planBackground"
+                            android:gravity="center"
+                            android:text="Sa"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/largeText" />
+                    </LinearLayout>
+                    <include layout="@layout/planset_picker_friday"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/planBackground" />
+
+                    <LinearLayout
+                        android:id="@+id/saturday"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white"
+                        android:weightSum="4">
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/saLeft"
+                            android:layout_width="30dp"
+                            android:layout_height="@dimen/dayHeight"
+                            android:layout_gravity="center"
+                            android:background="@color/planBackground"
+                            android:gravity="center"
+                            android:text="Sa"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/largeText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/saturdayEatByText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="1dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="9:00 PM"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/saturdayDoseOneText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="1dp"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/background"
+                            android:gravity="center"
+                            android:text="11:00PM"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/saturdayDoseTwoText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="1dp"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="3:00 PM"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/saturdayWakeText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/background"
+                            android:gravity="center"
+                            android:text="7:00 AM"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/mediumText" />
+
+                        <myapp.net.inspire.font.AvenirRoman
+                            android:id="@+id/saRight"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@color/planBackground"
+                            android:gravity="center"
+                            android:text="Su"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/largeText" />
+                    </LinearLayout>
+                    <include layout="@layout/planset_picker_saturday"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="400dp"
+                    android:background="@color/planBackground"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <!--<qpaysolutions.net.inspire.font.AvenirRoman
+                        android:id="@+id/sunRight"
+                        android:background="@color/planBackground"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/dayHeight"
+                        android:layout_marginTop="60dp"
+                        android:layout_width="30dp"
+                        android:text="Su"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/largeText"/>-->
+                    <!-- <qpaysolutions.net.inspire.font.AvenirRoman
+                         android:id="@+id/moRight"
+                         android:background="@color/planBackground"
+                         android:gravity="center"
+                         android:layout_gravity="center"
+                         android:layout_height="@dimen/dayHeight"
+                         android:layout_width="30dp"
+                         android:text="Mo"
+                         android:textColor="@color/white"
+                         android:textSize="@dimen/largeText"/>-->
+                    <!-- <qpaysolutions.net.inspire.font.AvenirRoman
+                         android:id="@+id/tuRight"
+                         android:background="@color/planBackground"
+                         android:gravity="center"
+                         android:layout_gravity="center"
+                         android:layout_height="@dimen/dayHeight"
+                         android:layout_width="30dp"
+                         android:text="Tu"
+                         android:textColor="@color/white"
+                         android:textSize="@dimen/largeText"/>-->
+                    <!-- <qpaysolutions.net.inspire.font.AvenirRoman
+                         android:id="@+id/weRight"
+                         android:background="@color/planBackground"
+                         android:gravity="center"
+                         android:layout_gravity="center"
+                         android:layout_height="@dimen/dayHeight"
+                         android:layout_width="30dp"
+                         android:text="We"
+                         android:textColor="@color/white"
+                         android:textSize="@dimen/largeText"/>-->
+                    <!--  <qpaysolutions.net.inspire.font.AvenirRoman
+                          android:id="@+id/thRight"
+                          android:background="@color/planBackground"
+                          android:gravity="center"
+                          android:layout_gravity="center"
+                          android:layout_height="@dimen/dayHeight"
+                          android:layout_width="30dp"
+                          android:text="Th"
+                          android:textColor="@color/white"
+                          android:textSize="@dimen/largeText"/>-->
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/planBackground" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dayHeight"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_4dp"
+                android:gravity="center"
+                android:text="@string/select_anyday_to_adjust"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_18sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginRight="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_32dp">
+
+                <ImageButton
+                    android:id="@+id/doneButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button_done" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

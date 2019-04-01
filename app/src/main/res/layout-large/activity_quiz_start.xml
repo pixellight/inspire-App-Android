@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/contentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomView"
+            android:layout_below="@id/toolbar">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/description"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/margin_16dp">
+
+                <ImageView
+                    android:id="@+id/quizImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="650dp"
+                    android:layout_below="@id/description"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/quiz_start_screen_one"
+                     />
+
+                <ImageButton
+                    android:id="@+id/startQuiz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/quizImageView"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="bottom|center"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_action_bttn_start" />
+            </FrameLayout>
+
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/description"
+                android:padding="@dimen/margin_8dp"
+                android:text="@string/sleep_habit"
+                android:textColor="@color/planBackground"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginRight="@dimen/margin_16dp"
+                android:padding="@dimen/margin_4dp"
+                android:fontFamily="@font/gotham_light"
+                android:text="@string/sleep_habit_quiz_description"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_24sp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

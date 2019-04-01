@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_above="@id/bottomView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <myapp.net.inspire.font.AvenirRoman
+                    android:id="@+id/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Support"
+                    android:textColor="@color/planBackground"
+                    android:textSize="24sp" />
+
+                <myapp.net.inspire.font.AvenirRoman
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="2dp"
+                    android:text="@string/support_1"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <myapp.net.inspire.font.AvenirRoman
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="2dp"
+                    android:text="@string/support_2"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:orientation="vertical">
+
+                    <myapp.net.inspire.font.AvenirRoman
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="@dimen/margin_16dp"
+                        android:gravity="center"
+                        android:text="Describe your issues: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_8dp"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/planQuestion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/blackDim"
+                            android:text="Plan questions"
+                            style="@android:style/Widget.CompoundButton.RadioButton"/>
+
+                        <CheckBox
+                            android:id="@+id/progressQuestion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/blackDim"
+                            style="@android:style/Widget.CompoundButton.RadioButton"
+                            android:text="Progress tracking questions" />
+
+                        <CheckBox
+                            android:id="@+id/reportQuestion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/blackDim"
+                            android:text="Report questions"
+                            style="@android:style/Widget.CompoundButton.RadioButton"/>
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_16dp">
+
+                        <ImageButton
+                            android:id="@+id/emailBttn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/button_email" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/bottomView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_info_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blackDim"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/fullPrescribeInformationSupport"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Full Prescribing Information"
+                android:textColor="@color/black"
+                android:textSize="@dimen/smallText" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <myapp.net.inspire.font.AvenirRoman
+                android:id="@+id/importantSafetyInformationSupport"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Important Safety Information"
+                android:textColor="@color/black"
+                android:textSize="@dimen/smallText" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

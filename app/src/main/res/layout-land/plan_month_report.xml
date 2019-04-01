@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_gravity="center|top"
+        android:layout_marginBottom="@dimen/marginFive"
+        android:layout_marginEnd="@dimen/marginFive"
+        android:layout_marginStart="@dimen/marginFive"
+        android:layout_marginTop="@dimen/marginFive"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="2" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/planReportTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:text="Current Week"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_gravity="center|top"
+        android:layout_marginEnd="@dimen/marginFive"
+        android:layout_marginStart="@dimen/marginFive"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="2" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Sunday"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_12sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Monday"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_12sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Tuesday"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_12sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Wednesday"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_12sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Thursday"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_12sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Friday"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_12sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Saturday"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_12sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/napOneLayoutGraph"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/report_table_height"
+        android:layout_gravity="center|top"
+        android:layout_marginEnd="@dimen/marginFive"
+        android:layout_marginStart="@dimen/marginFive"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="9">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Nap 1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/smallText" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/napOneSunday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/napOneMonday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/napOneTuesday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/napOneWednesday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/napOneThursday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/napOneFriday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/napOneSaturday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/napTwoLayoutGraph"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/report_table_height"
+        android:layout_gravity="center|top"
+        android:layout_marginEnd="@dimen/marginFive"
+        android:layout_marginStart="@dimen/marginFive"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="9">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Nap 2"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/smallText" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/napTwoSunday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/napTwoMonday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/napTwoTuesday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/napTwoWednesday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/napTwoThursday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/napTwoFriday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/napTwoSaturday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/napThreeLayoutGraph"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/report_table_height"
+        android:layout_gravity="center|top"
+        android:layout_marginEnd="@dimen/marginFive"
+        android:layout_marginStart="@dimen/marginFive"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="9">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Nap 3"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/smallText" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/napThreeSunday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/napThreeMonday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/napThreeTuesday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/napThreeWednesday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/napThreeThursday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/napThreeFriday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/napThreeSaturday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/doseOneLayoutGraph"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/report_table_height"
+        android:layout_gravity="center|top"
+        android:layout_marginEnd="@dimen/marginFive"
+        android:layout_marginStart="@dimen/marginFive"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Dose 1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/smallText" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/doseOneSunday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/doseOneMonday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/doseOneTuesday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/doseOneWednesday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/doseOneThursday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/doseOneFriday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/doseOneSaturday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/doseTwoLayoutGraph"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/report_table_height"
+        android:layout_gravity="center|top"
+        android:layout_marginEnd="@dimen/marginFive"
+        android:layout_marginStart="@dimen/marginFive"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Dose 2"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/smallText" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/doseTwoSunday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/doseTwoMonday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/doseTwoTuesday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/doseTwoWednesday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/doseTwoThursday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/doseTwoFriday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/doseTwoSaturday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wakeLayoutGraph"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/report_table_height"
+        android:layout_gravity="center|top"
+        android:layout_marginEnd="@dimen/marginFive"
+        android:layout_marginStart="@dimen/marginFive"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Wake"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/smallText" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/wakeSunday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/wakeMonday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/wakeTuesday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/wakeWednesday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/wakeThursday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/wakeFriday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:id="@+id/wakeSaturday"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_gravity="center|top"
+        android:layout_marginEnd="@dimen/marginFive"
+        android:layout_marginStart="@dimen/marginFive"
+        android:layout_marginTop="@dimen/marginFive"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Monday"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_12sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Tuesday"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_12sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Wednesday"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_12sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Thursday"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_12sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Friday"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_12sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Saturday"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_12sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+
+        <myapp.net.inspire.font.AvenirRoman
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Sunday"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_12sp" />
+    </LinearLayout>
+
+</LinearLayout>

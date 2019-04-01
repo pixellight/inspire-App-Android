@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#102F87</color>
+    <color name="colorPrimaryDark">#102F87</color>
+    <color name="coloPrimaryPlan">#12338E</color>
+    <color name="colorAccent">#f09837</color>
+    <color name="white">#fff</color>
+    <color name="imageTint">#999797</color>
+    <color name="black">#000000</color>
+    <color name="blackDim">#d1d2d4</color>
+    <color name="planBackground">#f09837</color>
+    <color name="circleColour">#e77a02</color>
+    <color name="redText">#dc3a11</color>
+    <color name="background">#FAF9F5</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="darkThemeBackground">#0A2387</color>
+
+    <color name="clickText">#fbbfbfbf</color>
+
+    <color name="borderButton">#f09837</color>
+    <color name="colorAlpha">#59b6b6b6</color>
+    <color name="bg_row_background">#fa315b</color>
+    <color name="colorLightGrey">#e1e1e1</color>
+    <color name="colorGrey">#e9e7e9</color>
+    <color name="colorGreyPlan">#efebebeb</color>
+    <color name="colorGreen">#119f4b</color>
+    <color name="colorLightGreen">#22b424</color>
+    <color name="colorMidLightGrey">#efeff4</color>
+    <color name="colorBlue">#406c86</color>
+    <color name="Orange">#f09837</color>
+
+
+    <array name="array_dot_active">
+        <item>@color/planBackground</item>
+        <item>@color/planBackground</item>
+        <item>@color/planBackground</item>
+        <item>@color/planBackground</item>
+        <item>@color/planBackground</item>
+        <item>@color/planBackground</item>
+        <item>@color/planBackground</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/white</item>
+        <item>@color/white</item>
+        <item>@color/white</item>
+        <item>@color/white</item>
+        <item>@color/white</item>
+        <item>@color/white</item>
+        <item>@color/white</item>
+    </array>
+
+</resources>
